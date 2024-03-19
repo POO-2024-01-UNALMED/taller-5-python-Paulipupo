@@ -1,5 +1,4 @@
 from zooAnimales.animal import Animal
-
 class Pez(Animal):
     _listado = []
     salmones = 0
@@ -21,9 +20,14 @@ class Pez(Animal):
     
     @classmethod
     def crearSalmon(cls, nombre, edad, genero):
-        cls.salmones += 2
+        cls.salmones += 1
         return cls(nombre, edad, "oceano", genero, "rojo", 6)
 
+    @classmethod
+    def crearBacalao(cls, nombre, edad, genero):
+        cls.bacalaos += 1 
+        return cls(nombre, edad, "oceano", genero, "gris", 6)
+    
     def getColorEscamas(self):
         return self._colorEscamas
 

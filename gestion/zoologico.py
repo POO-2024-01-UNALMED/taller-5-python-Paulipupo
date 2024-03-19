@@ -1,3 +1,4 @@
+#No llama a otros módulos.
 class Zoologico():
     def __init__(self,nombre,ubicacion):
         self._nombre = nombre
