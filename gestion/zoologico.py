@@ -1,4 +1,3 @@
-from gestion.zoologico import Zoologico
 class Zoologico():
     def __init__(self,nombre,ubicacion):
         self._nombre = nombre
@@ -26,8 +25,8 @@ class Zoologico():
     def setUbicacion(self,ubicacion):
         self._ubicacion=ubicacion
     
-    def getZonas(self):
+    def getZona(self):
         return self._zonas
     
-    def setZonas(self,zonas):
+    def setZona(self,zonas):
         self._zonas=zonas
